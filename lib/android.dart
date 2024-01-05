@@ -18,12 +18,14 @@ class AndroidIconTemplate {
   final int size;
 }
 
+const double ratio = 0.5;
+
 final List<AndroidIconTemplate> adaptiveForegroundIcons = <AndroidIconTemplate>[
-  AndroidIconTemplate(directoryName: 'drawable-mdpi', size: 108),
-  AndroidIconTemplate(directoryName: 'drawable-hdpi', size: 162),
-  AndroidIconTemplate(directoryName: 'drawable-xhdpi', size: 216),
-  AndroidIconTemplate(directoryName: 'drawable-xxhdpi', size: 324),
-  AndroidIconTemplate(directoryName: 'drawable-xxxhdpi', size: 432),
+  AndroidIconTemplate(directoryName: 'drawable-mdpi', size: (108 * ratio).toInt()),
+  AndroidIconTemplate(directoryName: 'drawable-hdpi', size: (162 * ratio).toInt()),
+  AndroidIconTemplate(directoryName: 'drawable-xhdpi', size: (216 * ratio).toInt()),
+  AndroidIconTemplate(directoryName: 'drawable-xxhdpi', size: (324 * ratio).toInt()),
+  AndroidIconTemplate(directoryName: 'drawable-xxxhdpi', size: (432 * ratio).toInt()),
 ];
 
 List<AndroidIconTemplate> androidIcons = <AndroidIconTemplate>[
